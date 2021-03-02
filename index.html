@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Input -->
+    <div class="container">
+        <div class="section">
+        <form action="" method="post" id="input-data">
+            <label for="concepto">Concepto</label>
+            <td><input type="text" name="concepto" id="concepto"></td>
+            <label for="valor">Valor</label>
+            <td><input type="text" name="valor" id="valor"></td>
+            <label for="seguridad">Seguridad</label>
+            <td><input type="text" name="seguridad" id="seguridad"></td>
+            <br>
+            <button type="submit" value="Enviar" class="btn" id="btnSend">Enviar datos</button>
+        </form>
+        </div>
+    </div>
+    <!-- Output -->
+    <div class="container">
+        <div class="section">
+            <button class="btn" id="boton-json">Recibir datos</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Valor</th>
+                        <th>Seguridad</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody id="respuesta">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br><br>
+    <input class="thumb" type="file" id="files" name="files[]" multiple />
+    <output class="thumb" id="list"></output>
+    <!-- A ver si funciona ya! -->
+    <input type="file" id="file-input" />
+    <h3>Contenido del archivo:</h3>
+    <pre id="contenido-archivo"></pre>
+
+<!-- <script src="/ajax-main.js"></script>
+<script src="/app.js"></script> -->
+<script src="/testeo.js"></script>
+<script src="/ajax2.js"></script>
+</body>
+</html>
